@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function controllo_cognome() {
+
+            let x = document.getElementById("cognome").value;
+            let mex = document.getElementById("messaggio");
+            
+            if(x == "") {
+                mex.innerHTML = "Errore cognome obbligatorio";
+            }else{
+                    // SUBMIT
+            }
+        }
+        function controllo_nome() {
+
+            let y = document.getElementById("nome").value;
+            let mex = document.getElementById("messaggio1");
+
+            if(y == "") {
+                mex.innerHTML = "Errore nome obbligatorio";
+            }else{
+                    // SUBMIT
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- invio i dati .... get (chiaro url) o post (nascosti all'interno del body http)
+            name ... è utilizzato per etichettare i dati da inviare al server
+            id ... è utilizzato dal programmatore per gestire il DOM
+
+        Form ... submit() evento ... HTML invia i dati dal server
+        Form ...          evento ... HTML invia i dati a JS che poi li passa al server
+    -->
+    <form action="https://www.google.com/" method="get">
+        COGNOME : <input type="text" name="cognome" id="cognome" maxlength="40">
+        <br>
+        NOME :<input type="text" name="nome" id="nome" maxlength="30">
+
+        <input type="button" onclick="controllo_cognome(), controllo_nome()" value="INVIA">
+        <h1 id="messaggio"></h1>
+        <h1 id="messaggio1"></h1>
+
+    </form>
+</body>
+</html>
