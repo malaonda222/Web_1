@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,4 +39,52 @@
         <li>terzo elemento</li>
     </ol>  
 </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var mio = document.getElementById("miobottone");
+        mio.onclick=function(){
+            alert('ciao');
+        }
+    </script>
+</head>
+<body>
+    <button id="miobottone"> Salutami </button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
 </html>
+
+    <h2 id="paperino">dom</h2>
+    <button id="miobottone"> Salutami </button>
+    <script>
+            var mio = document.getElementById("miobottone");
+            mio.addEventListener("mouseover", primafunzione);
+            mio.addEventListener("click", secondafunzione);
+            mio.addEventListener("mouseout", terzafunzione);
+            function primafunzione(){
+            document.getElementById("paperino").innerHTML ='ho generato un mouseover';
+            }
+            function secondafunzione(){
+            document.getElementById("paperino").innerHTML ='ho generato un click';
+            }
+            function terzafunzione(){
+            document.getElementById("paperino").innerHTML ='ho generato un mouseout';
+            }
+    </script>
