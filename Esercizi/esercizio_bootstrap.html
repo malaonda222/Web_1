@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
+    <style>
+        .card-narrow{
+            width: 260px;      
+        }
+    </style>
     <div class="container">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid mt-3 mb-3">
@@ -32,68 +37,63 @@
                 </div>    
             </div>
         </nav>
-        <figure class="text-center">
-            <blockquote class="blockquote">
-                <h1 class="display-6 mt-5">Pricing</h1>
-            </blockquote>
-            <figcaption>
-                <p class="text-center mx-auto" style="max-width: 600px;"> 
-                    Quickly build an effective pricing table for your potential customers with this <br>
-                    Bootstrap example. It's built with default Bootstrap components and utilities with <br>
-                    little customization.
-                </p>
-            </figcaption>
-        </figure>
+        <div class="text-center">
+            <h1 class="display-6 mt-5">Pricing</h1>
+            <p class="text-center mx-auto" style="max-width: 600px;"> 
+                Quickly build an effective pricing table for your potential customers with this <br>
+                Bootstrap example. It's built with default Bootstrap components and utilities with <br>
+                little customization.
+            </p>
+        </div>
         <div class="container my-5">
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+            <div class="row justify-content-center text-center">
+                <div class="col-auto mb-4">
+                    <div class="card h-100 card-narrow">
                         <div class="card-header">Free</div>
                         <div class="card-body">
-                            <h3 class="card-title">$0 / mo</h3>
+                            <h3 class="card-price">$0 <small class="text-muted">/ mo</small></h3>
                             <p class="card-text">
                                 10 users included<br>
                                 2 GB of storage<br>
                                 Email support<br>
                                 Help center access
                             </p>
-                            <a href="#" class="btn btn-outline-primary">Sign up for free</a>
+                            <a href="#" class="btn btn-outline-primary" style="width: 100%;">Sign up for free</a>
                         </div>
                     </div>      
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                <div class="col-auto mb-4">
+                    <div class="card h-100 card-narrow">
                         <div class="card-header">Pro</div>
                         <div class="card-body">
-                            <h3 class="card-title">$15 / mo</h3>
+                            <h3 class="card-title">$15 <small class="text-muted">/ mo</small></h3>
                             <p class="card-text">
                                 20 users included<br>
                                 10 GB of storage<br>
                                 Priority email support<br>
                                 Help center access
                             </p>
-                            <a href="#" class="btn btn-primary">Get started</a>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">Get started</a>
                         </div>
                     </div>      
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                <div class="col-auto mb-4">
+                    <div class="card h-100 card-narrow">
                         <div class="card-header">Enterprise</div>
                         <div class="card-body">
-                            <h3 class="card-title">
-                                <span class="fw-bold">$29</span> / mo </h3> 
+                            <h3 class="card-title">$29 <small class="text-muted">/ mo</small></h3> 
                             <p class="card-text">
                                 30 users included<br>
                                 15 GB of storage<br>
                                 Phone and email support<br>
                                 Help center access
                             </p>
-                            <a href="#" class="btn btn-primary">Contact us</a>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">Contact us</a>
                         </div>
                     </div>      
                 </div>
-                <hr class="my-4 mt-5">
-                <footer class="bd-footer py-4 py-md-5 mt-10">
+                <div class="mx-auto mt-1 border-top" style="width: 835px; border-color: #656565; opacity: 0.8;"></div>
+                <footer class="bd-footer py-4 py-md-5 mt-10" style="width: 890px">
                     <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
                       <div class="row mt-n4">
                         <div class="col-6 col-lg-3 text-start">
