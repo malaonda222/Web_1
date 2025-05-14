@@ -12,17 +12,18 @@ Successivamente convertire la stringa in un numero e stampare a video il valore 
     <title>Document</title>
 </head>
 <body>
+    <h1>Valore della variabile "c"</h1>
     <p id="variabile-c"></p>
     <script>
         let c = "50" 
         document.getElementById("variabile-c").innerHTML = "Valore di c: " + c;
-        console.log(typeof(c));
+        console.log("Tipo di valore: ", typeof(c));
         
         let risultato = isNaN(c);
         console.log(risultato);
 
         let z = parseInt(c);
-        console.log(typeof(z)); 
+        console.log("Tipo di valore: ", typeof(z)); 
 
     </script>
     

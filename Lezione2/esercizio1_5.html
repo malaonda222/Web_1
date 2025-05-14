@@ -18,13 +18,14 @@ l’altro senza la virgola.*/
         document.getElementById("giorni").innerHTML = "Giorni della settimana: " + g;
         console.log(g);
 
-        // let risultato = g.replace(/,/g, "<br>");
-        // document.getElementById("risultato").innerHTML = "Risultato:<br>" + risultato;
-        // console.log(risultato);
-
-        let risultato = g.replace(/,/g, "\n");
-        document.getElementById("risultato").innerHTML = "Risultato:\n" + risultato;
+        let risultato = g.replace(/,/g, "<br>");
+        document.getElementById("risultato").innerHTML = `Risultato:<br> ${risultato}`;
         console.log(risultato);
+
+        //oppure 
+        // let risultato = g.replace(/,/g, "\n");
+        // document.getElementById("risultato").innerHTML = "Risultato:\n" + risultato;
+        // console.log(risultato);
 
     </script>
 <body>
