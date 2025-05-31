@@ -7,12 +7,46 @@
 </head>
 <body>
     <h2>Calcolatrice</h2>
-
+    <div id="bottone"></div>
     <label></label>
     <script>
-    function calcolatrice(argomento1, argomento2){
-        let argomento1 = ("Inserisci il primo argomento: ")
-        let argomento2 = prompt("Inserisci il secondo argomento: ")
+    function calcolatrice(){
+        let argomento1 = parseFloat(document.getElementById("numero1"));
+        let argomento2 = parseFloat(document.getElementById("numero 2"));
+        let operazione = document.getElementById("operazione").value;
+
+        let risultato;
+
+        if (operazione === "+") {
+            risultato = argomento1 + argomento2;
+        } else if (operazione === "-") {
+            risultato = argomento1 - argomento2;
+        } else if (operazione === "*") {
+            risultato = argomento1 * argomento2;
+        } else if (operazione === "/") {
+            if (argomento2 !== 0) {
+                risultato = argomento1 / argomento2; 
+            } else {
+                risultato = "Non è possibile dividere per zero.";
+            }
+        } else {
+            risultato = "Operazione non valida.";
+        }
+        document.getElementById("risultato").innerHTML = risultato;
+    }
+        <form>
+        SelezionaCalcolo<br>
+        <select name="calcolo">
+        option value="+">Addizione</option>
+        option value="-">Sottazione</option>
+        option value="*">Moltiplicazione</option>
+        option value="/">Divisione</option>
+        </select><br>
+
+        <input type="button" name="calcola" value="Calcola l'operazione">
+        </form>
+
+
     }
 
     </script>
