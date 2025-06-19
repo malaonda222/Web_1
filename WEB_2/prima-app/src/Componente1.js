@@ -1,16 +1,18 @@
 import React from "react";
-
+  
 const Componente1 = ({ nome, cognome, eta }) => {
+  const DivStyle = {
+            color: "red",
+            fontWeight: "800",
+            border: "1px #000 solid",
+            margin: "15px",
+            padding: "15px",
+            backgroundColor: "yellow"
+          }
   return (
     <>
       <div
-        style={{
-          color: "red",
-          fontWeight: "800",
-          border: "1px #000 solid",
-          margin: "15px",
-          padding: "15px",
-        }}
+        style={DivStyle}
       >
         {nome} {cognome} di anni {eta}
         <Anagrafica></Anagrafica>
