@@ -1,7 +1,7 @@
 import React from 'react'
 
 const StampaNumeri = () => {
-    const lista = []
+    const lista = [];
     for(let i=0; i<=10; i++){
         lista.push(i);
     }
